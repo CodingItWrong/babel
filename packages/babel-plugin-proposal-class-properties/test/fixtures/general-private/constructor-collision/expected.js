@@ -10,11 +10,8 @@ var Foo = function Foo() {
   var foo = "foo";
 };
 
-_bar = babelHelpers.privateClassPropertyKey("bar");
+_bar = new WeakMap();
 
 var _initialiseProps = function (_this) {
-  Object.defineProperty(_this, _bar, {
-    writable: true,
-    value: foo
-  });
+  _bar.set(_this, foo);
 };
