@@ -57,7 +57,7 @@ var _this = this;
 (function () {
   class Baz {
     constructor(force) {
-      _initialiseProps(this);
+      _initialiseProps.call(this);
     }
 
   }
@@ -71,8 +71,10 @@ var _this = this;
     }
   });
 
-  var _initialiseProps = function (_this4) {
-    Object.defineProperty(_this4, "fn", {
+  var _initialiseProps = function () {
+    var _this4 = this;
+
+    Object.defineProperty(this, "fn", {
       configurable: true,
       enumerable: true,
       writable: true,
@@ -80,7 +82,7 @@ var _this = this;
         return console.log(_this4);
       }
     });
-    Object.defineProperty(_this4, "force", {
+    Object.defineProperty(this, "force", {
       configurable: true,
       enumerable: true,
       writable: true,
