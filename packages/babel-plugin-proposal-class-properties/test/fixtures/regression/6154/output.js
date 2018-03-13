@@ -27,7 +27,7 @@ var Test = function Test() {
 
       _classCallCheck(this, Other);
 
-      return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = Other.__proto__ || Object.getPrototypeOf(Other)).apply(this, arguments)), Object.defineProperty(_assertThisInitialized(_this), "a", {
+      return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (Other.__proto__ || Object.getPrototypeOf(Other)).apply(this, arguments)), Object.defineProperty(_assertThisInitialized(_this), "a", {
         configurable: true,
         enumerable: true,
         writable: true,
