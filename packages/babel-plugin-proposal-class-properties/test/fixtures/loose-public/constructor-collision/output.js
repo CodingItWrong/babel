@@ -3,7 +3,7 @@ var foo = "bar";
 var Foo = function Foo() {
   babelHelpers.classCallCheck(this, Foo);
 
-  _initialiseProps.call(this);
+  _initialiseProps(this);
 
   var foo = "foo";
 };
